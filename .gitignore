@@ -1,0 +1,16 @@
+# Ignore Python cache, notebook outputs, and data artifacts
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.npz
+*.npy
+data/raw/*
+data/processed/*
+.env
+.DS_Store
