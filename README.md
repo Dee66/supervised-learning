@@ -24,20 +24,19 @@ _Click a badge to launch the main notebook interactively—no installation neede
 
 ## <span style="color:#4e6e58">What’s Inside?</span>
 
-- **Notebook 1:** Foundations of supervised learning, data flow, and class balance. Interactive feature visualizations and label noise toggles.
-- **Notebook 2–3:** Cost curve and gradient intuition—see why the slope matters, and how optimization “rolls downhill.”  
-  <details closed>
-    <summary style="font-weight:bold; color:#b36b00;">🧠 Architect’s Note: Why Cost Function Shape Matters</summary>
-    <div style="color:#444; background:#fffbe6; border-left:4px solid #b36b00; padding:8px 16px; margin:6px 0 0 0;">
-    In real-world ML platforms, model retraining schedules often hinge on cost curve behavior. Flat minima, sharp valleys, and plateaus all impact stability, compute cost, and convergence guarantees.
-    </div>
-  </details>
-- **Notebook 4:** Animated optimization on elliptical vs circular cost contours—visualizing why scaling matters for convergence.
-- **Notebook 6:** Regularization heatmap (λ vs validation loss), with overlays for weight norms—linking hyperparameter search to MLOps.
-- **Notebook 7:** Real-world decision boundary failures—explore misclassification, threshold effects, and business-aligned metrics.
-- **Notebook 9:** Mapping notebook insights to MLOps layers—training, CI/CD, monitoring, and retraining triggers.
+| Notebook | Key Concepts & Visuals | Production Insight |
+|---|---|---|
+| [**1. Foundations of Supervised Learning**](notebooks/02_supervised_learning_systems.ipynb) <sup>[Colab](https://colab.research.google.com/github/Dee66/supervised-systems/blob/main/notebooks/02_supervised_learning_systems.ipynb)</sup> | Regression vs. Classification, Decision Boundaries | How problem framing shapes system design |
+| [**2. Linear Regression: Cost & Optimization**](notebooks/03_cost_curve_and_gradient_intuition.ipynb) <sup>[Colab](https://colab.research.google.com/github/Dee66/supervised-systems/blob/main/notebooks/03_cost_curve_and_gradient_intuition.ipynb)</sup> | Cost Landscape, Learning Curves, Parameter Evolution, Failure Modes, Interactivity | Why optimization stability matters for deployment |
+| [**3. Feature Engineering and Scaling**](notebooks/04_cost_curve_and_gradient_intuition_part_2.ipynb) <sup>[Colab](https://colab.research.google.com/github/Dee66/supervised-systems/blob/main/notebooks/04_cost_curve_and_gradient_intuition_part_2.ipynb)</sup> | Scaling Impact, Cost Surface, Learning Curves, Interactivity | How feature scaling impacts convergence and cost |
+| [**4. Polynomial Regression & Regularization**](notebooks/05_polynomial_regression.ipynb) <sup>[Colab](https://colab.research.google.com/github/Dee66/supervised-systems/blob/main/notebooks/05_polynomial_regression.ipynb)</sup> | Model Complexity, Overfitting, Regularization, Interactivity | Controlling complexity for robust, scalable ML |
+| [**5. Classification in Depth: Logistic Regression**](notebooks/06_classification.ipynb) <sup>[Colab](https://colab.research.google.com/github/Dee66/supervised-systems/blob/main/notebooks/06_classification.ipynb)</sup> | Sigmoid, Cross-Entropy, Decision Boundaries, Cost Landscape, Interactivity | Mapping model outputs to business risk |
+| [**6. Pitfalls & Best Practices**](notebooks/07_best_practice.ipynb) <sup>[Colab](https://colab.research.google.com/github/Dee66/supervised-systems/blob/main/notebooks/07_best_practice.ipynb)</sup> | Failure Modes, Best Practices, Production Reflection, Regularization Heatmap | Avoiding silent failures in real systems |
+| [**7. Advanced Topics & MLOps**](notebooks/08_advanced.ipynb) <sup>[Colab](https://colab.research.google.com/github/Dee66/supervised-systems/blob/main/notebooks/08_advanced.ipynb)</sup> | Decision Boundary Failures, Precision/Recall, Threshold Tuning, MLOps Mapping | Connecting ML insights to CI/CD and monitoring |
 
 ---
+
+*Click any notebook title to view it on GitHub, or use the Colab links to launch interactively.*
 
 ## <span style="color:#b36b00">Why This Series?</span>
 
@@ -56,11 +55,57 @@ This series is your portfolio superpower—not just teaching ML, but drawing a c
 
 ---
 
+## <span style="color:#4e6e58">Recent Delivery</span>
+
+- **[CodeCraft AI](https://github.com/Dee66/CodeCraft-AI):**  
+  End-to-end design and deployment of a full-stack, AWS-native generative AI platform.  
+  → [Implementation Checklist](https://github.com/Dee66/CodeCraft-AI/blob/main/docs/checklist.md)
+
+---
+
+## <span style="color:#3b7c8c">Key Technologies Used</span>
+
+- **AWS Native:** SageMaker, Lambda, ECS (Fargate), S3, ECR, ALB, IAM, Secrets Manager, SSM, CloudWatch, VPC, KMS
+- **MLOps & Automation:** CI/CD with GitHub Actions, multi-stage Docker builds, automated retraining, pre-commit hooks, code linting (Ruff), vulnerability scanning
+- **AI/ML:** Hugging Face Transformers, FAISS (vector search), PEFT, RAG, PyTorch, scikit-learn
+- **Infrastructure as Code (IaC):** AWS CDK (Python) for reproducible, auditable deployments
+- **Security:** OIDC-based passwordless deployment, least-privilege IAM, automated secret rotation, private networking
+- **Observability:** Centralized logging, CloudWatch dashboards, structured logs, proactive alerting
+- **Testing:** Pytest, nbval (Jupyter), coverage, static type checking (mypy)
+
+---
+
+## <span style="color:#b36b00">How to Run</span>
+
+1. **Clone the repo:**  
+   `git clone https://github.com/yourusername/supervised-systems.git`
+
+2. **Install dependencies:**  
+   - With Poetry: `poetry install`
+   - Or with pip: `pip install -r requirements.txt` *(if provided)*
+
+3. **Run notebooks:**  
+   - Launch Jupyter Lab or Notebook in the `notebooks/` directory.
+   - Notebooks will automatically add `src/` to `sys.path` for local imports.
+
+> **Note:**  
+> This project uses a `src/` layout. If you run scripts outside notebooks, add this at the top:
+> ```python
+> import sys, os
+> sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), 'src')))
+> ```
+
+---
+
 <div style="background:solidrgb(113, 163, 224); border-left:4px solid #2b4a6f; padding:12px 18px; margin:18px 0;">
 <b>Ready to go beyond the textbook?</b>  
 Start with Notebook 1 and build your systems thinking, one architectural layer at a time.  
 <span style="color:#4e6e58">Visuals, interactivity, and real-world context await—dive in!</span>
-</div>
 
 ---
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
