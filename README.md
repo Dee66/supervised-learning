@@ -4,6 +4,14 @@ Welcome to a hands-on, architecturally-minded notebook series designed to bridge
 
 ---
 
+🚀 **Quick Start**  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://bit.ly/3I4rKCk)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Dee66/supervised-learning/HEAD?filepath=notebooks%2F02_supervised_learning_systems.ipynb)
+
+---
+
+_Click a badge to launch the main notebook interactively—no installation needed!_
+
 ## <span style="color:#3b7c8c">Series Structure & Vision</span>
 
 - **Modular Progression:** Each notebook builds on the last, layering new architectural and operational insights.
@@ -51,4 +59,8 @@ This series is your portfolio superpower—not just teaching ML, but drawing a c
 <div style="background:solidrgb(113, 163, 224); border-left:4px solid #2b4a6f; padding:12px 18px; margin:18px 0;">
 <b>Ready to go beyond the textbook?</b>  
 Start with Notebook 1 and build your systems thinking, one architectural layer at a time.  
-<span style="color:#4e6e58">Visuals, interactivity, and real-world context
+<span style="color:#4e6e58">Visuals, interactivity, and real-world context await—dive in!</span>
+</div>
+
+---
+
