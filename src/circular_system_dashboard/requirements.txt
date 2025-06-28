@@ -1,0 +1,6 @@
+Plotly
+numpy
+ipywidgets
+pandas
+scikit-learn
+plotly-express

@@ -1,0 +1,32 @@
+Context and Goals for the Notebook Series
+
+Personal Motivation & Career Transition:
+I am an experienced senior software engineer and technical lead (15+ years) transitioning into an AI Solutions Architect role. My motivation is to leverage deep engineering background and new AI/ML expertise to secure a high-impact, lucrative position that allows you to focus on meaningful, innovative work. You have rapidly upskilled in AI (with certifications from Deeplearning.ai and IBM) and have already delivered a full-stack, production-grade AI solution (CodeCraft AI) using AWS and modern MLOps practices.
+
+Portfolio as a Living CV:
+This notebook series is designed to be the “front page” of my CV—a living, interactive portfolio that not only demonstrates your technical and architectural acumen but also tells my story as a builder and architect. Each notebook is crafted to engage, inform, and persuade hiring managers and recruiters that you are ready for senior AI architecture roles.
+
+Series Structure & Narrative:
+
+Modular progression: Each notebook builds on the last, deepening both ML concepts and architectural/system context.
+Production focus: Every concept is tied to real-world system behavior, stability, scaling, and business value, not just academic accuracy.
+Cyber security as practical thread: Cyber security scenarios are used to ground ML concepts in operational reality, showing how theory translates to practice.
+Key Features:
+
+Visuals and interactivity: Charts, sliders, overlays, and animations make concepts tangible and engaging.
+Failure cases: Explicitly visualize and explain misclassification, poor scaling, overfitting, drift, and other real-world pitfalls.
+Real-world reflections: Each section connects insights to MLOps, infrastructure, and business risk.
+Architect’s Notes: Collapsible, insight-rich markdown blocks explain why each concept matters in production and how it maps to real MLOps/business risk.
+System behavior focus: Emphasize stability, monitoring, retraining, CI/CD, and operational best practices.
+Expert-level refinements: Visualize gradients, cost landscapes, regularization effects, and threshold tradeoffs. Animate optimization paths and show how architectural choices affect outcomes.
+Notebook Structure (Example):
+
+Foundations of Supervised Learning: Regression vs. classification, decision boundaries, cyber security use case.
+Linear Regression & Optimization: Cost curves, gradient intuition, learning curves, failure modes.
+Feature Engineering & Scaling: Scaling impact, cost surface, learning curves, interactive scaling demo.
+Polynomial Regression & Regularization: Model complexity, overfitting, regularization, animated optimization.
+Classification in Depth: Logistic regression, sigmoid, cross-entropy, decision boundaries, cost landscape.
+Pitfalls & Best Practices: Failure modes, best practices, production reflection, interactive challenges.
+Advanced Topics: Regularization heatmaps, threshold/precision-recall tradeoffs, MLOps mapping.
+Tone & Goal:
+Demonstrate architectural depth—show not just how ML works, but how it behaves in real systems. Use cyber security as a practical lens, but keep the focus on ML system design, operational excellence, and business value. Make your motivation, expertise, and readiness for AI Solutions Architect roles clear throughout.

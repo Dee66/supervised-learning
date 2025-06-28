@@ -14,3 +14,4 @@ data/raw/*
 data/processed/*
 .env
 .DS_Store
+scrap.json
